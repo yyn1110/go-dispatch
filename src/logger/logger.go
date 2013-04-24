@@ -25,8 +25,7 @@ func LogErrorF(err error, info string) {
 		h := t.Hour()
 		m := t.Minute()
 		s := t.Second()
-		ms := t.Nanosecond()
-		fmt.Printf("%d-%s-%d %d:%d:%d %d ERROR : %s , %s\n", year, month, day, h, m, s, ms, err.Error(), info)
+		fmt.Printf("%d-%s-%d %d:%d:%d ERROR : %s , %s\n", year, month, day, h, m, s, err.Error(), info)
 	}
 }
 func LogError(info string) {
@@ -38,8 +37,7 @@ func LogError(info string) {
 		h := t.Hour()
 		m := t.Minute()
 		s := t.Second()
-		ms := t.Nanosecond()
-		fmt.Printf("%d-%s-%d %d:%d:%d %d  ERROR : %s \n", year, month, day, h, m, s, ms, info)
+		fmt.Printf("%d-%s-%d %d:%d:%d  ERROR : %s \n", year, month, day, h, m, s, info)
 	}
 }
 func LogNormalF(err error, info string) {
@@ -51,8 +49,7 @@ func LogNormalF(err error, info string) {
 		h := t.Hour()
 		m := t.Minute()
 		s := t.Second()
-		ms := t.Nanosecond()
-		fmt.Printf("%d-%s-%d %d:%d:%d %d NORMAL: %s , %s\n", year, month, day, h, m, s, ms, err.Error(), info)
+		fmt.Printf("%d-%s-%d %d:%d:%d NORMAL: %s , %s\n", year, month, day, h, m, s, err.Error(), info)
 	}
 }
 func LogNormal(info string) {
@@ -64,8 +61,7 @@ func LogNormal(info string) {
 		h := t.Hour()
 		m := t.Minute()
 		s := t.Second()
-		ms := t.Nanosecond()
-		fmt.Printf("%d-%s-%d %d:%d:%d %d NORMAL: %s\n", year, month, day, h, m, s, ms, info)
+		fmt.Printf("%d-%s-%d %d:%d:%d NORMAL: %s\n", year, month, day, h, m, s, info)
 	}
 }
 func LogDebugF(err error, info string) {
@@ -77,8 +73,7 @@ func LogDebugF(err error, info string) {
 		h := t.Hour()
 		m := t.Minute()
 		s := t.Second()
-		ms := t.Nanosecond()
-		fmt.Printf("%d-%s-%d %d:%d:%d %d DEBUG : %s , %s\n", year, month, day, h, m, s, ms, err.Error(), info)
+		fmt.Printf("%d-%s-%d %d:%d:%d DEBUG : %s , %s\n", year, month, day, h, m, s, err.Error(), info)
 	}
 }
 func LogDebug(info string) {
@@ -90,8 +85,7 @@ func LogDebug(info string) {
 		h := t.Hour()
 		m := t.Minute()
 		s := t.Second()
-		ms := t.Nanosecond()
-		fmt.Printf("%d-%s-%d %d:%d:%d %d DEBUG : %s\n", year, month, day, h, m, s, ms, info)
+		fmt.Printf("%d-%s-%d %d:%d:%d DEBUG : %s\n", year, month, day, h, m, s, info)
 	}
 }
 func Log(info string) {

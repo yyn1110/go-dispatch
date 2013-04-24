@@ -7,7 +7,8 @@ import (
 )
 
 const (
-	code = 12321
+	code           = 12321
+	PACKAGEHEADLEN = 6
 )
 
 type Head struct {
